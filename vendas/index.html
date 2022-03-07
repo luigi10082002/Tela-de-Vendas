@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendas</title>
+
+  <!--scripts externos-->
+  <script src="https://kit.fontawesome.com/7c05ce3466.js" crossorigin="anonymous"></script>
+
+  <!--links-->
+  <link rel="stylesheet" href="css/all.css">
+  
+
+</head>
+
+<body>
+  
+  <div class="circle-LeftUp">
+    <i class="fa-solid fa-truck fa-xl"></i>
+  </div>
+
+  <div class="circle-CenterUp">
+    <i class="fa-solid fa-basket-shopping fa-xl"></i>
+  </div>
+
+  <div class="circle-RightUp">
+    <i class="fa-solid fa-clipboard-list fa-xl"></i>
+  </div>
+
+  <div class="circle-LeftDown">
+    <i class="fa-solid fa-hand-holding-dollar fa-xl"></i>
+  </div>
+
+  <div class="circle-CenterDown">
+    <i class="fa-solid fa-cash-register fa-xl"></i>
+  </div>
+
+  <div class="circle-RightDown">
+    <i class="fa-solid fa-wallet fa-xl"></i>
+  </div>
+ <!-- -->
+  <section id="cards">
+    <article class="cards-left">
+      <div class="card-up">
+
+        <p class="title-header">
+          Encomendas
+        </p>
+
+        <table id="encomendas">
+          <thead>
+            <tr>
+              <td class="header-tableLeft" align=center> </td>
+              <td class="header-tableCenter" align=center>Qtd.</td>
+              <td class="header-tableRight" align=center>Valor(R$)</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr id="linha_1">
+              <td id="body-tableLeft" align=center></td>
+              <td id="qtd-Encomendas1" align=center></td>
+              <td id="valor-Encomendas1" align=center></td>
+            </tr>
+            
+
+            <tr id="linha_1">
+              <td id="body-tableLeft" align=center></td>
+              <td id="qtd-Encomendas1" align=center></td>
+              <td id="valor-Encomendas1" align=center></td>
+            </tr>
+
+            <tr id="linha_3">
+              <td id="body-tableLeft" align=center></td>
+              <td id="qtd-Encomendas1" align=center></td>
+              <td id="valor-Encomendas1" align=center></td>
+            </tr>
+
+            <tr id="linha_4">
+              <td id="body-tableLeft" align=center></td>
+              <td id="qtd-Encomendas4" align=center></td>
+              <td id="valor-Encomendas4" align=center></td>
+            </tr>
+          </tbody>
+          <script src="tratamento_dados/index.js"></script>
+        </table>
+      </div>
+ 
+      <div class="card-down">
+        <p class="title-header">
+          Financeiro
+        </p>
+
+        <table id="vendas">
+          <thead>
+            <tr>
+              <td class="header-tableLeft" align=center> </td>
+              <td class="header-tableCenter" align=center>Qtd.</td>
+              <td class="header-tableRight" align=center>Valor(R$)</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr id="linha_1">
+              <td id="body-tableLeft" align=center>Contas que vencem hoje</td>
+              <td id="qtd-Financeiro1" align=center></td>
+              <td id="valor-Financeiro1" align=center></td>
+            </tr>
+
+            <tr id="linha_2">
+              <td id="body-tableLeft" align=center>Contas quem vencem na semana</td>
+              <td id="qtd-Financeiro2" align=center></td>
+              <td id="valor-Financeiro2" align=center></td>
+            </tr>
+
+            <tr id="linha_3">
+              <td id="body-tableLeft" align=center>Contas atrasadas deste mês</td>
+              <td id="qtd-Financeiro3" align=center></td>
+              <td id="valor-Financeiro3" align=center></td>
+            </tr>
+
+            <tr id="linha_4">
+              <td id="body-tableLeft" align=center>Contas a pagar no mês</td>
+              <td id="qtd-Financeiro4" align=center></td>
+              <td id="valor-Financeiro4" align=center></td>
+            </tr>
+
+            <tr id="linha_5">
+              <td id="body-tableLeft" align=center>Recebimentos confirmados no mês</td>
+              <td id="qtd-Financeiro5" align=center></td>
+              <td id="valor-Financeiro5" align=center></td>
+            </tr>
+          </tbody>
+
+          <tfoot class="footer-table">
+            <tr id="linha_6">
+              <td id="body-tableLeft" align=center>Caixa gerado no mês</td>
+              <td id="qtd-Financeiro6" align=center></td>
+              <td id="valor-Financeiro6" align=center></td>
+            </tr>
+          </tfoot>
+          <script src="tratamento_dados/financeiro .js"></script>
+        </table>
+      </div>
+    </article>
+
+    <article class="cards-center">
+      <div class="card-up">
+        <p class="title-header">
+          Vendas
+        </p>
+
+        <table id="os">
+          <thead>
+            <tr>
+              <td class="header-tableLeft" align=center> </td>
+              <td class="header-tableCenter" align=center>Qtd.</td>
+              <td class="header-tableRight" align=center>Valor(R$)</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr id="linha_1">
+              <td id="body-tableLeft" align=center>Orçamento em aberto</td>
+              <td id="qtd-Vendas1" align=center></td>
+              <td id="valor-Vendas1" align=center></td>
+            </tr>
+
+            <tr id="linha_2">
+              <td id="body-tableLeft" align=center>Vendas aguardando encomendas</td>
+              <td id="qtd-Vendas2" align=center></td>
+              <td id="valor-Vendas2" align=center></td>
+            </tr>
+
+            <tr id="linha_3">
+              <td id="body-tableLeft" align=center>Pedidos no mês(sem nota)</td>
+              <td id="qtd-Vendas3" align=center></td>
+              <td id="valor-Vendas3" align=center></td>
+            </tr>
+
+            <tr id="linha_4">
+              <td id="body-tableLeft" align=center>Vendas finalizadas no mês(com nota)</td>
+              <td id="qtd-Vendas4" align=center></td>
+              <td id="valor-Vendas4" align=center></td>
+            </tr>
+
+            <tr id="linha_5">
+              <td id="body-tableLeft" align=center>Vendas sem recebimento confirmado</td>
+              <td id="qtd-Vendas5" align=center></td>
+              <td id="valor-Vendas5" align=center></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr id="linha_6">
+              <td id="body-tableLeft" align=center>Total de vendas no mês</td>
+              <td id="qtdTotal-Vendas" align=center></td>
+              <td id="valorTotal-Vendas" align=center></td>
+            </tr>
+          </tfoot>
+          <script src="tratamento_dados/vendas.js"></script>
+        </table>
+      </div>
+
+      <div class="card-down">
+        <p class="title-header">
+          Fechamento de Caixa
+        </p>
+
+        <table id="financeiro">
+          <thead>
+            <tr>
+              <td class="header-tableLeft" align=center> </td>
+              <td class="header-tableCenter" align=center>Qtd.</td>
+              <td class="header-tableRight" align=center>Valor(R$)</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td id="body-tableLeft" align=center>Caixas fechados no mês com divergência</td>
+              <td id="qtd-FechamentoDeCaixa1" align=center></td>
+              <td id="valor-FechamentoDeCaixa1" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>Sangrias manuais feitas no dia</td>
+              <td id="qtd-FechamentoDeCaixa2" align=center></td>
+              <td id="valor-FechamentoDeCaixa2" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>Retiradas manuais feitas no dia</td>
+              <td id="qtd-FechamentoDeCaixa3" align=center></td>
+              <td id="valor-FechamentoDeCaixa3" align=center></td>
+            </tr>
+          </tbody>
+          <script src="tratamento_dados/fechamento.js"></script>
+        </table>
+      </div>
+    </article>
+
+    <article class="cards-right">
+      <div class="card-up">
+        <p class="title-header">
+          Ordem de Serviço
+        </p>
+
+        <table id="fechamento">
+          <thead>
+            <tr>
+              <td class="header-tableLeft" align=center> </td>
+              <td class="header-tableCenter" align=center>Qtd.</td>
+              <td class="header-tableRight" align=center>Valor(R$)</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td id="body-tableLeft" align=center>OS a serem finalizadas hoje</td>
+              <td id="qtd-OS1" align=center></td>
+              <td id="valor-OS1" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>OS atrasadas desde o início do mês</td>
+              <td id="qtd-OS2" align=center></td>
+              <td id="valor-OS2" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>OS aguardando pagamento deste mês</td>
+              <td id="qtd-OS3" align=center></td>
+              <td id="valor-OS3" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>OS sem recebimento confirmado</td>
+              <td id="qtd-OS4" align=center></td>
+              <td id="valor-OS4" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>Total de OS no mês</td>
+              <td id="qtd-OS5" align=center></td>
+              <td id="valor-OS5" align=center></td>
+            </tr>
+          </tbody>
+          <script src="tratamento_dados/OS.js"></script>
+
+        </table>
+      </div>
+
+      <div class="card-down">
+        <p class="title-header">
+          Compras
+        </p>
+
+        <table id="compras">
+          <thead>
+            <tr>
+              <td class="header-tableLeft" align=center></td>
+              <td class="header-tableCenter" align=center>Qtd.</td>
+              <td class="header-tableRight" align=center>Valor(R$)</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td id="body-tableLeft" align=center>Aguardando entrega para esta semana</td>
+              <td id="qtd-Compras1" align=center></td>
+              <td id="valor-Compras1" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>Fornecedores com vencimento hoje</td>
+              <td id="qtd-Compras2" align=center></td>
+              <td id="valor-Compras2" align=center></td>
+            </tr>
+
+            <tr>
+              <td id="body-tableLeft" align=center>Fornecedores que vencem na semana</td>
+              <td id="qtd-Compras3" align=center></td>
+              <td id="valor-Compras3" align=center></td>
+            </tr>
+          </tbody>
+          <script src="tratamento_dados/compras.js"></script>
+        </table>
+      </div>
+    </article>
+  </section>
+<!-- -->
+</body>
+
+</html>
