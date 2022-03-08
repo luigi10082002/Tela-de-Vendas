@@ -106,9 +106,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 48%;
+    width: 90%;
     height: 50vw;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-top: 1vw;
   }
 
@@ -121,19 +121,20 @@
 
   .card-vertical{
     background-color: white;
-    width: 23.5vw;
+    width: 35vw;
     height: 50vw; 
     border-radius: 10px;
     border: solid;
     border-width: 0.5px;
     border-color: rgb(212, 212, 212);
     overflow: auto;
-    padding: 0.8vw
+    padding: 0.8vw;
+    margin-left: 8.7vw;
   }
 
   .card-vertical2{
     background-color: white;
-    width: 23.5vw;
+    width: 35vw;
     height: 50vw; 
     border-radius: 10px;
     border: solid;

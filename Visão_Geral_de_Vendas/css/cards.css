@@ -1,4 +1,5 @@
 #dados {
+  background-color: red;
   display: flex;
   flex-direction: row;
   width: 98%;
@@ -21,6 +22,7 @@
   border: solid;
   border-width: 0.5px;
   border-color: rgb(212, 212, 212);
+  margin-left: 0.5vw;
 }
 
 .card2{
