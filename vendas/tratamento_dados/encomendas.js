@@ -46,7 +46,6 @@ function Tratamento_De_Dados_Linha_1_Painel_1(response) {
   valor = valor_1.replace(".", ",");
 
   linha = document.getElementById("linha_1");
-  tdOp = document.getElementById("qtd-Encomendas1");
   tdQtd = document.getElementById("qtd-Encomendas1");
   tdValor = document.getElementById("valor-Encomendas1");
 
