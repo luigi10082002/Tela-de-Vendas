@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="app">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>index</title>
-
-  <!--links-->
-  <link rel="stylesheet" href="css/all.css">
+  <title>Vendas</title>
 
   <!--scripts externos-->
   <script src="https://kit.fontawesome.com/6382a739c1.js" crossorigin="anonymous"></script>
   
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-resource.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-route.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-sanitize.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-mask.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-medidas-si.js"></script>
+
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-array-utils.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-date-utils.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-proxy-global.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/ngMask.min.js"></script>
+
+  <!--links-->
+  <link rel="stylesheet" href="css/all.css">  
+
 </head>
 
-<body>
+<body ng-controller="DashController">
   <header id="header">
     <h1 class="text-title">VISÃO GERAL DE VENDAS</h1>
   </header>
@@ -164,33 +176,14 @@
             </thead>
             <tbody>
 
-              <tr>
-                <td class="header-tableGerente">
-                  Mark
-                </td>
-
-                <td class="header-tableGerente">Otto</td>
-                <td class="header-tablePositiva">@mdo</td>
+              <tr ng-repeat="item in api.painel_2">
+                <td class="header-tableGerente">{{item.operacao}}</td>
+                <td class="header-tableGerente">{{item.valor}}</td>
+                <td class="header-tablePositiva">{{item.qtd}}</td>
               </tr>
-
-              <tr>
-                <td class="header-tableGerente">
-                  Jacob
-                </td>
-
-                <td class="header-tableGerente">Thornton</td>
-                <td class="header-tablePositiva">@fat</td>
-              </tr>
-
-              <tr>
-                <td class="header-tableGerente">
-                  Larry the Bird
-                </td>
-                <td class="header-table">@twitter</td>
-                <td class="header-tablePositiva">@mdo</td>
-              </tr>
-
             </tbody>
+            <script src="app.js"></script>
+
           </table>
         </div>
       </article>
@@ -210,54 +203,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr ng-repeat="item in api.painel_4">
                 <td class="header-tableGerente">
                   <i class="far fa-minus-square">
-                    Mark
+                    {{item.operacao}}
                   </i>
                 </td>
 
-                <td class="header-table">Otto</td>
-                <td class="header-table">@mdo</td>
-                <td class="header-table">@mdo</td>
-                <td class="header-tablePositiva">@mdo</td>
+                <td class="header-table">{{item.valor}}</td>
+                <td class="header-table">{{item.qtd}}</td>
+                <td class="header-table">{{item.qtd}}</td>
+                <td class="header-tablePositiva">{{item.valor}}</td>
               </tr>
-              <tr>
-                <td class="header-tableGerente">
-                  <i class="far fa-minus-square">
-                    Jacob
-                  </i>
-                </td>
-
-                <td class="header-table">Thornton</td>
-                <td class="header-table">@fat</td>
-                <td class="header-table">@mdo</td>
-                <td class="header-tablePositiva">@mdo</td>
-              </tr>
-              <tr>
-                <td class="header-tableGerente">
-                  <i class="far fa-minus-square">
-                    Larry the Bird
-                  </i>
-                </td>
-
-                <td class="header-table">@twitter</td>
-                <td class="header-table">@twitter</td>
-                <td class="header-table">@mdo</td>
-                <td class="header-tablePositiva">@mdo</td>
-              </tr>
-              <tr>
-                <td class="header-tableGerente">
-                  <i class="far fa-minus-square">
-                    Jacob
-                  </i>
-                </td>
-
-                <td class="header-table">Thornton</td>
-                <td class="header-table">@fat</td>
-                <td class="header-table">@mdo</td>
-                <td class="header-tablePositiva">@mdo</td>
-              </tr>
+              
             </tbody>
 
             <tfoot class="footer-table">
@@ -269,6 +227,8 @@
                 <td class="header-tableLast">667</td>
               </tr>
             </tfoot>
+            <script src="app.js"></script>
+
           </table>
 
         </div>
@@ -295,27 +255,13 @@
                   </thead>
                   <tbody>
 
-                    <tr>
-                      <td class="header-tableGerente">Doce</td>
-                      <td class="header-tablePositiva">234</td>
-                    </tr>
-
-                    <tr>
-                      <td class="header-tableGerente">Jacob</td>
-                      <td class="header-tablePositiva">300</td>
-                    </tr>
-
-                    <tr>
-                      <td class="header-tableGerente">Larry the Bird</td>
-                      <td class="header-tablePositiva">400</td>
-                    </tr>
-
-                    <tr>
-                      <td class="header-tablelastright">Jacob</td>
-                      <td class="header-tableLast">500</td>
+                    <tr ng-repeat="item in api.painel_2">
+                      <td class="header-tableGerente">{{item.operacao}}</td>
+                      <td class="header-tablePositiva">{{item.qtd}}</td>
                     </tr>
 
                   </tbody>
+                  <script src="app.js"></script>
 
                 </table>
               </div>
@@ -337,40 +283,21 @@
             </thead>
             <tbody>
 
-              <tr>
-                <td class="header-tableGerente">Doce</td>
-                <td class="header-tablePositiva">234</td>
+              <tr ng-repeat="item in api.painel_1">
+                <td class="header-tableGerente">{{item.operacao}}</td>
+                <td class="header-tablePositiva">{{item.qtd}}</td>
               </tr>
-
-              <tr>
-                <td class="header-tableGerente">Jacob</td>
-                <td class="header-tablePositiva">300</td>
-              </tr>
-
-              <tr>
-                <td class="header-tableGerente">Larry the Bird</td>
-                <td class="header-tablePositiva">400</td>
-              </tr>
-
-              <tr>
-                <td class="header-tablelastright">Jacob</td>
-                <td class="header-tableLast">500</td>
-              </tr>
-
             </tbody>
+            <script src="app.js"></script>
+
           </table>
         </div>
       </div>
     </aside>
 
   </sectio>
- 
-  <footer style="margin-top: 5px;">
-    <section >
-      <p>.</p>
-    </section>
-  </footer>
    <!--  -->
 </body>
 
 </html>
+
