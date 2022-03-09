@@ -56,7 +56,7 @@
             </span>
 
           <div class="info-content">
-            <b class="infos">R$10.214.809</b>
+            <b class="infos1">R$10.214.809</b>
           </div>
           </p>
 
@@ -69,9 +69,7 @@
 
       <div class="card2">
         <div class="circle2">
-          <div class="icon">
-            <i class="fas fa-chart-line fa-2x"></i>
-          </div>
+          
         </div>
 
         <div class="infos-infos">
@@ -82,7 +80,7 @@
             </span>
 
           <div class="info-content">
-            <b class="infos">32.065</b>
+            <b class="infos2">32.065</b>
           </div>
           </p>
 
@@ -93,59 +91,87 @@
         </div>
       </div>
     </article>
+<!-- -->
+    
+<article class="dados-card2">
+
+  <div class="card3">
+
+    <div class="circle3">
+      
+    </div>
+
+    <div class="infos-infos">
+
+      <p>
+        <span class="title">Ticket Médio
+          </br>
+        </span>
+
+      <div class="info-content">
+        <b class="infos3">R$318,57</b>
+      </div>
+      </p>
+
+      <div class="footer">
+        <p class="num-footer3">-16%</p>
+        <p class="text-footer">Vs. ano anterior</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</article>
 
     <article class="dados-card">
 
-      <div class="card3">
+      <div class="card4">
 
-        <div class="circle3">
-          <div class="icon">
-            <i class="fas fa-shopping-cart fa-2x"></i>
-          </div>
+        <div class="circle4">
+          
         </div>
 
         <div class="infos-infos">
 
           <p>
-            <span class="title">Ticket Médio
+            <span class="title">Compras (mês)
               </br>
             </span>
 
           <div class="info-content">
-            <b class="infos">R$318,57</b>
+            <b class="infos4">50</b>
           </div>
           </p>
 
           <div class="footer">
-            <p class="num-footer3">-16%</p>
+            <p class="num-footer4">-16%</p>
             <p class="text-footer">Vs. ano anterior</p>
           </div>
         </div>
       </div>
       </div>
 
-      <div class="card4">
+      <div class="card5">
 
-        <div class="circle4">
-          <div class="icon">
-            <i class="fas fa-tags fa-2x"></i>
-          </div>
+        <div class="circle5">
+          
         </div>
 
         <div class="infos-infos">
 
           <p>
-            <span class="title">Positivação
+            <span class="title">Notas Emitidas
               </br>
             </span>
 
           <div class="info-content">
-            <b class="infos">667</b>
+            <b class="infos5">667</b>
           </div>
           </p>
 
           <div class="footer">
-            <p class="num-footer4">13%</p>
+            <p class="num-footer5">13%</p>
             <span class="text-footer">Vs. ano anterior</span>
           </div>
         </div>
@@ -155,12 +181,48 @@
     </article>
   </section>
 
+
   <sectio class="tabelas">
+
+    <aside id="left">
+      <section class="vertical-cards">
+        <article class="cards">
+
+          <div class="container-card-vertical">
+
+            <div class="card-vertical">
+              <p class="title-card1">Ticket Médio por Produto</p>
+
+              <div class="lista">
+                <table class="table-vendas">
+                  <thead>
+                    <tr>
+                      <td class="header-tableGerente">Produto</td>
+                      <td class="header-tablePositiva">Valor (R$)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr ng-repeat="item in api.painel_2">
+                      <td class="header-tableGerente">{{item.operacao}}</td>
+                      <td class="header-tablePositiva">{{item.qtd}}</td>
+                    </tr>
+
+                  </tbody>
+                  <script src="app.js"></script>
+
+                </table>
+              </div>
+            </div>
+
+        </article>
+      </section>
+    </aside>
 
     <section id="table-horizontal">
       <article class="horizontal">
 
-        <p class="title-card">Evolução de Vendas</p>
+        <p class="title-card2">Evolução de Vendas</p>
 
         <div class="graphic">
 
@@ -187,6 +249,9 @@
       </article>
 
       <article class="horizontal2">
+
+        <p class="title-card3">Quantidade de Vendas</p>
+
 
         <div class="graphic">
 
@@ -233,43 +298,13 @@
       </article>
 
     </section>
-
+ 
+ 
     <aside id="right">
-      <section class="vertical-cards">
-        <article class="cards">
-
-          <div class="container-card-vertical">
-
-            <div class="card-vertical">
-              <p class="title-card">Ticket Médio por Pronto</p>
-
-              <div class="lista">
-                <table class="table-vendas">
-                  <thead>
-                    <tr>
-                      <td class="header-tableGerente">Produto</td>
-                      <td class="header-tablePositiva">Valor (R$)</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-
-                    <tr ng-repeat="item in api.painel_2">
-                      <td class="header-tableGerente">{{item.operacao}}</td>
-                      <td class="header-tablePositiva">{{item.qtd}}</td>
-                    </tr>
-
-                  </tbody>
-                  <script src="app.js"></script>
-
-                </table>
-              </div>
-            </div>
-
-        </article>
-      </section>
+      
 
       <div class="card-vertical2">
-        <p class="title-card">Positivação por Produto</p>
+        <p class="title-card4">Positivação por Produto</p>
 
         <div class="lista">
           <table class="table-vendas">
@@ -294,7 +329,7 @@
     </aside>
 
   </sectio>
- <!-- -->
+<!-- -->
 </body>
 
 </html>

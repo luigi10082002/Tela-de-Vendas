@@ -82,6 +82,14 @@ nav {
   nav {
     width: 15vw;
   }
+
+  #header {
+    display: flex;
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 1%;
+  }
 }
 
 @media (min-width: 929px) and (max-width: 1114px) {

@@ -1,10 +1,9 @@
 #table-horizontal {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 50vw;
   height: 40vw;
-  margin-top: 1%;
-  margin-left: 1%;
+  margin-left: 10vw;
 }
 
 .tabelas {
@@ -22,6 +21,9 @@
   border: solid;
   border-width: 0.5px;
   border-color: rgb(212, 212, 212);
+  margin-left: 0.5vw;
+  padding: 0.8vw;
+
 }
 
 .horizontal2 {
@@ -35,6 +37,8 @@
   border: solid;
   border-width: 0.5px;
   border-color: rgb(212, 212, 212);
+  margin-left: 0.5vw;
+  padding: 0.8vw;
 }
 
 table {
@@ -45,10 +49,29 @@ thead tr td {
   font-weight: bold;
 }
 
-.title-card {
+.title-card1,
+.title-card2,
+.title-card3,
+.title-card4 {
   margin: 1%;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.title-card1 {
+  color: rgb(9, 214, 241);
+}
+
+.title-card4 {
+  color:  rgb(241, 10, 203);
+}
+
+.title-card3 {
+  color: rgb(35, 190, 48);
+}
+
+.title-card2 {
+  color: rgb(195, 0, 255);
 }
 
 .table-vendas {
@@ -63,6 +86,8 @@ thead tr td {
   border-width: 1px;
   border-top: none;
   border-right: none;
+  padding-left: 1vw;
+
 }
 
 .header-tableGerente {
@@ -72,6 +97,7 @@ thead tr td {
   border-width: 1px;
   border-top: none;
   border-left: none;
+  padding: 1vw;
 }
 
 .header-tablePositiva {
@@ -81,6 +107,7 @@ thead tr td {
   border-width: 1px;
   border-top: none;
   border-right: none;
+  padding: 1vw;
 }
 
 .header-tableLast {
@@ -109,7 +136,7 @@ thead tr td {
     align-items: center;
     width: 98%;
     height: 80vw;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 1%;
   }
 
@@ -239,13 +266,12 @@ thead tr td {
 @media (min-width: 901px) and (max-width: 928px) {
   #table-horizontal {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 90%;
-    height: 37vw;
-    margin-right: 0vw;
-    margin-left: 5vw;
+    width: 98%;
+    height: 80vw;
+    margin-top: 2%;
+    margin-left: 1%;
   }
 
   .tabelas {
@@ -257,8 +283,8 @@ thead tr td {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 100%;
+    width: 85%;
+    height: 45%;
     border-radius: 10px;
     border: solid;
     border-width: 0.5px;
@@ -269,11 +295,8 @@ thead tr td {
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 0%;
-    width: 45%;
-    height: 100%;
-    margin-left: 2%;
-    margin-right: 1vw;
+    width: 85%;
+    height: 45%;
     border-radius: 10px;
     border: solid;
     border-width: 0.5px;
@@ -307,21 +330,88 @@ thead tr td {
   }
 }
 
-@media (min-width: 929px) and (max-width: 2560px) {
+@media (min-width: 929px) and (max-width: 1114px) {
   #table-horizontal {
     display: flex;
     flex-direction: column;
-    width: 48%;
-    height: 40vw;
-    margin-top: 1%;
+    align-items: center;
+    width: 98%;
+    height: 80vw;
+    margin-top: 2%;
     margin-left: 1%;
   }
 
   .tabelas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
+  .horizontal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 45%;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+  }
+
+  .horizontal2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 45%;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  thead tr td {
+    font-weight: bold;
+  }
+
+  .title-card {
+    margin: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .table-vendas {
+    height: 100%;
+    width: 100%;
+  }
+
+  .graphic {
+    width: 98%;
+    height: 75%;
+    margin: auto;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1115px) and (max-width: 1200px) {
+  #table-horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 46vw;
+    margin-left: 0vw;
+    margin-top: 16vh;
+  }
+  
+  .tabelas {
+    display: flex;
+    flex-direction: row;
+  }
+  
   .horizontal {
     background-color: white;
     display: flex;
@@ -332,8 +422,11 @@ thead tr td {
     border: solid;
     border-width: 0.5px;
     border-color: rgb(212, 212, 212);
+    margin-left: 0.5vw;
+    padding: 0.8vw;
+  
   }
-
+  
   .horizontal2 {
     background-color: white;
     display: flex;
@@ -345,27 +438,89 @@ thead tr td {
     border: solid;
     border-width: 0.5px;
     border-color: rgb(212, 212, 212);
+    margin-left: 0.5vw;
+    padding: 0.8vw;
   }
-
+  
   table {
     border-collapse: collapse;
   }
-
+  
   thead tr td {
     font-weight: bold;
   }
-
-  .title-card {
+  
+  .title-card1,
+  .title-card2,
+  .title-card3,
+  .title-card4 {
     margin: 1%;
     font-size: 1.2em;
     font-weight: bold;
   }
-
+  
+  .title-card1 {
+    color: rgb(9, 214, 241);
+  }
+  
+  .title-card4 {
+    color:  rgb(241, 10, 203);
+  }
+  
+  .title-card3 {
+    color: rgb(35, 190, 48);
+  }
+  
+  .title-card2 {
+    color: rgb(195, 0, 255);
+  }
+  
   .table-vendas {
     height: 100%;
     width: 100%;
   }
-
+  
+  .header-table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    padding-left: 1vw;
+  
+  }
+  
+  .header-tableGerente {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    padding: 1vw;
+  }
+  
+  .header-tablePositiva {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    padding: 1vw;
+  }
+  
+  .header-tableLast {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  
   .graphic {
     width: 98%;
     height: 75%;
@@ -373,3 +528,269 @@ thead tr td {
     overflow: auto;
   }
 }
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  #table-horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+    height: 55vw;
+    margin-left: 0.5vw;
+    margin-top: 2vh;
+  }
+  
+  .tabelas {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .horizontal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48%;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+    margin-left: 0.5vw;
+    padding: 0.8vw;
+  
+  }
+  
+  .horizontal2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48%;
+    margin-top: 3vh;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+    margin-left: 0.5vw;
+    padding: 0.8vw;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  thead tr td {
+    font-weight: bold;
+  }
+  
+  .title-card1,
+  .title-card2,
+  .title-card3,
+  .title-card4 {
+    margin: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .title-card1 {
+    color: rgb(9, 214, 241);
+  }
+  
+  .title-card4 {
+    color:  rgb(241, 10, 203);
+  }
+  
+  .title-card3 {
+    color: rgb(35, 190, 48);
+  }
+  
+  .title-card2 {
+    color: rgb(195, 0, 255);
+  }
+  
+  .table-vendas {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .header-table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    padding-left: 1vw;
+  
+  }
+  
+  .header-tableGerente {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    padding: 1vw;
+  }
+  
+  .header-tablePositiva {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    padding: 1vw;
+  }
+  
+  .header-tableLast {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+  .graphic {
+    width: 98%;
+    height: 75%;
+    margin: auto;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  #table-horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+    height: 47vw;
+    margin-left: 0vw;
+    margin-top: 2vh;
+  }
+  
+  .tabelas {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .horizontal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48%;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+    margin-left: 0.5vw;
+    padding: 0.8vw;
+  
+  }
+  
+  .horizontal2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48%;
+    margin-top: 3vh;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.5px;
+    border-color: rgb(212, 212, 212);
+    margin-left: 0.5vw;
+    padding: 0.8vw;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  thead tr td {
+    font-weight: bold;
+  }
+  
+  .title-card1,
+  .title-card2,
+  .title-card3,
+  .title-card4 {
+    margin: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .title-card1 {
+    color: rgb(9, 214, 241);
+  }
+  
+  .title-card4 {
+    color:  rgb(241, 10, 203);
+  }
+  
+  .title-card3 {
+    color: rgb(35, 190, 48);
+  }
+  
+  .title-card2 {
+    color: rgb(195, 0, 255);
+  }
+  
+  .table-vendas {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .header-table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    padding-left: 1vw;
+  
+  }
+  
+  .header-tableGerente {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    padding: 1vw;
+  }
+  
+  .header-tablePositiva {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    padding: 1vw;
+  }
+  
+  .header-tableLast {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+  .graphic {
+    width: 98%;
+    height: 75%;
+    margin: auto;
+    overflow: auto;
+  }
+}
+
+
