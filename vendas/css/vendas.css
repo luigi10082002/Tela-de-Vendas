@@ -22,11 +22,7 @@
 
 /*===========================*/
 
-#qtd-Vendas1,
-#qtd-Vendas2,
-#qtd-Vendas3,
-#qtd-Vendas4,
-#qtd-Vendas5 {
+#qtd-Vendas {
   padding-top: 0.5vw;
   border-color: rgb(185, 185, 185);
   border-style: solid;
@@ -36,11 +32,7 @@
   font-size: 1vw;
 }
 
-#valor-Vendas1,
-#valor-Vendas2,
-#valor-Vendas3,
-#valor-Vendas4,
-#valor-Vendas5 {
+#valor-Vendas {
   padding-top: 0.5vw;
   border-color: rgb(185, 185, 185);
   border-style: solid;
@@ -72,11 +64,7 @@
 
 @media only screen and (max-width: 320px) {
 
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -86,11 +74,7 @@
     font-size: 4vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -120,16 +104,11 @@
     font-size: 4vw;
   }
 
-  
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
 
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -139,11 +118,7 @@
     font-size: 4vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -177,11 +152,7 @@
 
 @media (min-width: 376px) and (max-width: 425px) {
 
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -191,11 +162,7 @@
     font-size: 4vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -229,11 +196,7 @@
 
 @media (min-width: 426px) and (max-width: 768px) {
  
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -243,11 +206,7 @@
     font-size: 2vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -281,11 +240,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5  {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -295,11 +250,7 @@
     font-size: 1.5vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -333,11 +284,7 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -347,11 +294,7 @@
     font-size: 1.3vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5  {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -384,11 +327,7 @@
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -398,11 +337,7 @@
     font-size: 1.3vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -436,11 +371,7 @@
 
 @media only screen and (min-width: 2561px) {
   
-  #qtd-Vendas1,
-  #qtd-Vendas2,
-  #qtd-Vendas3,
-  #qtd-Vendas4,
-  #qtd-Vendas5 {
+  #qtd-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -450,11 +381,7 @@
     font-size: 1.4vw;
   }
 
-  #valor-Vendas1,
-  #valor-Vendas2,
-  #valor-Vendas3,
-  #valor-Vendas4,
-  #valor-Vendas5 {
+  #valor-Vendas {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;

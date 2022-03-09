@@ -1,7 +1,5 @@
 
-#qtd-FechamentoDeCaixa1,
-#qtd-FechamentoDeCaixa2,
-#qtd-FechamentoDeCaixa3 {
+#qtd-FechamentoDeCaixa {
   padding-top: 0.5vw;
   border-color: rgb(185, 185, 185);
   border-style: solid;
@@ -11,9 +9,7 @@
   font-size: 1vw;
 }
 
-#valor-FechamentoDeCaixa1,
-#valor-FechamentoDeCaixa2,
-#valor-FechamentoDeCaixa3 {
+#valor-FechamentoDeCaixa {
   padding-top: 0.5vw;
   border-color: rgb(185, 185, 185);
   border-style: solid;
@@ -25,9 +21,7 @@
 
 @media only screen and (max-width: 320px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -37,9 +31,7 @@
     font-size: 4vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -53,9 +45,7 @@
 
 @media (min-width: 321px) and (max-width: 375px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -65,9 +55,7 @@
     font-size: 4vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -81,9 +69,7 @@
 
 @media (min-width: 376px) and (max-width: 425px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -93,9 +79,7 @@
     font-size: 4vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -109,9 +93,7 @@
 
 @media (min-width: 426px) and (max-width: 768px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -121,9 +103,7 @@
     font-size: 2vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -137,9 +117,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -149,9 +127,7 @@
     font-size: 1.5vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -165,9 +141,7 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
  
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -177,9 +151,7 @@
     font-size: 1.3vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -193,9 +165,7 @@
 
 @media (min-width: 1441px) and (max-width: 2560px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -205,9 +175,7 @@
     font-size: 1.3vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -221,9 +189,7 @@
 
 @media only screen and (min-width: 2561px) {
 
-  #qtd-FechamentoDeCaixa1,
-  #qtd-FechamentoDeCaixa2,
-  #qtd-FechamentoDeCaixa3 {
+  #qtd-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
@@ -233,9 +199,7 @@
     font-size: 1.4vw;
   }
 
-  #valor-FechamentoDeCaixa1,
-  #valor-FechamentoDeCaixa2,
-  #valor-FechamentoDeCaixa3 {
+  #valor-FechamentoDeCaixa {
     padding-top: 0.5vw;
     border-color: rgb(185, 185, 185);
     border-style: solid;
