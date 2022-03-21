@@ -256,3 +256,81 @@ thead tr td {
   height: 100%;
   width: 100%;
 }
+
+@media only screen and (max-width: 320px) {
+  .tables {
+    flex-direction: column;
+  }
+
+  .card-tables-horizontal {
+    margin-left: 0vw;
+    width: 65vw;
+  }
+
+  .card-tables-vertical1,
+  .card-tables-vertical2 {
+    width: 65vw;
+    height: 50vh;
+
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .tables {
+    flex-direction: column;
+  }
+
+  .card-tables-horizontal {
+    margin-left: 3vw;
+    width: 65vw;
+  }
+
+  .card-tables-vertical1,
+  .card-tables-vertical2 {
+    width: 65vw;
+    height: 50vh;
+
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .tables {
+    flex-direction: column;
+  }
+
+  .card-tables-horizontal {
+    margin-left: 10vw;
+    width: 65vw;
+  }
+
+  .card-tables-vertical1,
+  .card-tables-vertical2 {
+    width: 65vw;
+    height: 50vh;
+    margin-left: 10vw;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .card-tables-horizontal {
+    margin-left: 0vw;
+    height: 40vh;
+    width: 30vw;
+  }
+
+  .card-tables-vertical1,
+  .card-tables-vertical2 {
+    height: 83vh;
+    width: 20vw;
+    margin-left: 0vw;
+  }
+
+  .card-tables-vertical2 {
+    margin-right: 2vw;
+  }
+
+  .tables-horizontal {
+    width: 32vw;
+    margin-left: 10vw;
+  }
+}
