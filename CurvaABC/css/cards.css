@@ -1,0 +1,260 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  max-width: 100%;
+}
+
+.card {
+  background: #ffffff;
+  transition: all 0.25s linear;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  padding: 14px;
+
+  margin: 0px 5px 5px 5px;
+
+  width: 350px;
+  font-family: Roboto;
+
+  margin-right: 6vw;
+}
+
+.title-card {
+  display:inline-flex;
+}
+
+h6 {
+  font-weight:normal
+}
+
+.number {
+  margin-top:4px;
+}
+
+.faturamento {
+  font-weight:bold; 
+  color: rgb(195, 0, 255);
+}
+
+.QtdVendas {
+  font-weight:bold; 
+  color: rgb(35, 190, 48);
+}
+
+.ticket {
+  font-weight:bold; 
+  color: rgb(9, 214, 241);
+}
+
+.compras {
+  font-weight:bold; 
+  color:  rgb(241, 10, 203);
+}
+
+.notas {
+  font-weight:bold; 
+  color: rgb(255, 0, 0);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.flexbox > div {
+  flex: 1 1 200px;
+  flex-wrap: wrap;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.tables {
+  display: flex;
+  flex-direction: row;
+}
+
+.tables-horizontal {
+  width: 53vw
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead tr td {
+  font-weight: bold;
+}
+
+.card-tables-horizontal {
+  background-color: white;
+  transition: all 0.25s linear;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+
+  margin: 20px 5px 0px 5px;
+
+  height: 40vh;
+  width: 40vw;
+
+  overflow: auto;
+  overflow-y: scroll;
+  scrollbar-color: rgb(216, 216, 216)  #ffffff;
+
+  margin-left: 5.2vw;
+
+}
+
+.card-tables-vertical1,
+.card-tables-vertical2,
+.card-tables-vertical3,
+.card-tables-vertical4 {
+  background-color: white;
+  transition: all 0.25s linear;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  padding: 5px;
+
+  margin: 20px 5px 0px 5px;
+
+  height: 83vh;
+  width: 19vw;
+
+  overflow: auto;
+}
+
+.card-tables-vertical1 {
+  margin-left: 5vw;
+}
+
+.font-text {
+  font-size: 0.8em
+}
+
+.Center-table-header {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding-left: 1vw;
+
+  border-top: none;
+}
+
+.Left-table-header {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding: 1vw;
+
+  border-top: none;
+  border-left: none;
+
+}
+
+.Right-table-header {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding: 1vw;
+
+  border-top: none;
+  border-right: none;
+}
+
+.Center-table-body {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding-left: 1vw;
+
+  border-bottom: none;
+}
+
+.Left-table-body {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding: 1vw;
+
+  border-left: none;
+  border-bottom: none;
+}
+
+.Right-table-body {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding: 1vw;
+
+  border-bottom: none;
+  border-right: none;
+}
+
+.Last-Line {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: rgb(207, 207, 207);
+  border-width: 1px;
+
+  padding: 1vw;
+
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.title-card1,
+.title-card2,
+.title-card3,
+.title-card4 {
+  margin: 1%;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.title-card1 {
+  color: rgb(9, 214, 241);
+}
+
+.title-card4 {
+  color:  rgb(241, 10, 203);
+}
+
+.title-card3 {
+  color: rgb(35, 190, 48);
+}
+
+.title-card2 {
+  color: rgb(195, 0, 255);
+}
+
+.table-vendas {
+  height: 100%;
+  width: 100%;
+}

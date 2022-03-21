@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visão geral de vendas</title>
+
+  <script type="text/javascript" charset="ISO-8859-1" src="http://192.168.15.119:8000/javascript/prototype.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="http://192.168.15.119:8000/javascript/scripts.js"></script>
+
+  <!---------------------------------------------------------------------------------------------------------------------->
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-resource.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-route.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-sanitize.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-mask.min.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-medidas-si.js"></script>
+
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-array-utils.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-date-utils.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/angular-proxy-global.js"></script>
+  <script type="text/javascript" charset="ISO-8859-1" src="./js/angular/ngMask.min.js"></script>
+  <!---------------------------------------------------------------------------------------------------------------------->
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body ng-controller="DashController">
+
+  <div class="container">
+
+    <section class="flexbox">
+
+
+      <div class="card" style="height:fit-content;margin-bottom:16px;margin-right:16px;">
+        <div class="card-body">
+          <div>
+            <div class="title-card">
+              <h6>Faturamento</h6>
+            </div>
+            <div class="number">
+              <h2 class="faturamento">R$10.214.809</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="height:fit-content;margin-bottom:16px;margin-right:16px;">
+        <div class="card-body">
+          <div>
+            <div class="title-card">
+              <h6>Qtd Vendas</h6>
+            </div>
+            <div class="number">
+              <h2 class="QtdVendas">32.065</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="height:fit-content;margin-bottom:16px;margin-right:16px;">
+        <div class="card-body">
+          <div>
+            <div class="title-card">
+              <h6>Ticket Médio</h6>
+            </div>
+            <div class="number">
+              <h2 class="ticket">R$318,57</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="height:fit-content;margin-bottom:16px;margin-right:16px;">
+        <div class="card-body">
+          <div>
+            <div class="title-card">
+              <h6>Compras realizadas</h6>
+            </div>
+            <div class="number">
+              <h2 class="compras">50</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="height:fit-content;margin-bottom:16px;margin-right:16px;">
+        <div class="card-body">
+          <div>
+            <div class="title-card">
+              <h6>Notas Emitidas</h6>
+            </div>
+            <div class="number">
+              <h2 class="notas">667</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="tables">
+
+      <div class="tables-vertical">
+        <div class="card-tables-vertical1">
+          <p class="title-card1">Ticket Médio por Produto</p>
+
+          <div class="lista">
+            <table class="table-vendas">
+              <thead>
+                <tr class="font-text">
+                  <td class="Left-table-header">Produto</td>
+                  <td class="Right-table-header">Valor (R$)</td>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr ng-repeat="item in api.painel_2" class="font-text">
+                  <td class="Left-table-body">{{item.operacao}}</td>
+                  <td class="Right-table-body">{{item.qtd}}</td>
+                </tr>
+
+              </tbody>
+              <script src="app.js"></script>
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-tables-vertical2">
+        <p class="title-card4">Positivação por Produto</p>
+
+        <div class="lista">
+          <table class="table-vendas">
+            <thead>
+              <tr class="font-text">
+                <td class="Left-table-header">Produto</td>
+                <td class="Right-table-header">Positivação (%)</td>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr ng-repeat="item in api.painel_1" class="font-text">
+                <td class="Left-table-body">{{item.operacao}}</td>
+                <td class="Right-table-body">{{item.qtd}}</td>
+              </tr>
+            </tbody>
+            <script src="app.js"></script>
+
+          </table>
+        </div>
+      </div>
+
+      <div class="tables-vertical">
+        <div class="card-tables-vertical3">
+          <p class="title-card1">Ticket Médio por Produto</p>
+
+          <div class="lista">
+            <table class="table-vendas">
+              <thead>
+                <tr class="font-text">
+                  <td class="Left-table-header">Produto</td>
+                  <td class="Right-table-header">Valor (R$)</td>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr ng-repeat="item in api.painel_2" class="font-text">
+                  <td class="Left-table-body">{{item.operacao}}</td>
+                  <td class="Right-table-body">{{item.qtd}}</td>
+                </tr>
+
+              </tbody>
+              <script src="app.js"></script>
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-tables-vertical4">
+        <p class="title-card4">Positivação por Produto</p>
+
+        <div class="lista">
+          <table class="table-vendas">
+            <thead>
+              <tr class="font-text">
+                <td class="Left-table-header">Produto</td>
+                <td class="Right-table-header">Positivação (%)</td>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr ng-repeat="item in api.painel_1" class="font-text">
+                <td class="Left-table-body">{{item.operacao}}</td>
+                <td class="Right-table-body">{{item.qtd}}</td>
+              </tr>
+            </tbody>
+            <script src="app.js"></script>
+
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>

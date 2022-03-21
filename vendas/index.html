@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="app">
+<html lang="en" ng-app="app">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visão Geral de Vendas</title>
+  <title>Vendas</title>
 
-  <!--scripts externos-->
-  <script src="https://kit.fontawesome.com/7c05ce3466.js" crossorigin="anonymous"></script>
-
-  
+  <!---------------------------------------------------------------------------------------------------------------------->
   <script type="text/javascript" charset="ISO-8859-1" src="js/angular/angular.min.js"></script>
   <script type="text/javascript" charset="ISO-8859-1" src="js/angular/angular-resource.min.js"></script>
   <script type="text/javascript" charset="ISO-8859-1" src="js/angular/angular-route.min.js"></script>
@@ -22,194 +19,135 @@
   <script type="text/javascript" charset="ISO-8859-1" src="js/angular/angular-date-utils.js"></script>
   <script type="text/javascript" charset="ISO-8859-1" src="js/angular/angular-proxy-global.js"></script>
   <script type="text/javascript" charset="ISO-8859-1" src="js/angular/ngMask.min.js"></script>
+  <!---------------------------------------------------------------------------------------------------------------------->
 
-  <!--links-->
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="css/all.css">
-  
-
 </head>
 
 <body ng-controller="DashController">
-   <!--
-  <div class="circle-LeftUp">
-  </div>
 
-  <div class="circle-CenterUp">
-  </div>
-
-  <div class="circle-RightUp">
-  </div>
-
-  <div class="circle-LeftDown">
-  </div>
-
-  <div class="circle-CenterDown">
-  </div>
-
-  <div class="circle-RightDown">
-  </div>
- -->
-  <section id="cards">
-    <article class="cards-left">
-      <div class="card-up">
-
-        <p class="title-header1">
-          Encomendas
-        </p>
-
-        <table id="encomendas">
-          <thead>
-            <tr>
-              <td class="header-tableLeft" align=center> </td>
-              <td class="header-tableCenter" align=center>Qtd.</td>
-              <td class="header-tableRight" align=center>Valor(R$)</td>
-            </tr>
-          </thead>
-          
-          <tbody>
-            <tr ng-repeat="item in api.painel_1">
-              <td id="body-tableLeft" align=center>{{item.operacao}}</td>
-              <td id="qtd-Encomendas" align=center>{{item.qtd}}</td>
-              <td id="valor-Encomendas" align=center>{{item.valor}}</td>
-            </tr>
-          </tbody>
-          
-          <script src="app.js"></script>
+  <div class="container">
+    <div class="card">
+      <div class="title-header1">Encomendas</div>
+      <div class="card-body">
+        <table>
+          <tr>
+            <td>Descrição</td>
+            <td>Qtd</td>
+            <td class="padding-column-Left">Valor</td>
+          </tr>
+          <tr ng-repeat="item in api.painel_1">
+            <td>{{item.operacao}}</td>
+            <td>{{item.qtd}}</td>
+            <td class="padding-column-Left">{{item.valor}}</td>
+          </tr>
         </table>
       </div>
- 
-      <div class="card-down">
-        <p class="title-header2">
-          Financeiro
-        </p>
+    </div>
 
-        <table id="vendas">
-          <thead>
-            <tr>
-              <td class="header-tableLeft" align=center> </td>
-              <td class="header-tableCenter" align=center>Qtd.</td>
-              <td class="header-tableRight" align=center>Valor(R$)</td>
-            </tr>
-          </thead>
 
-          <tbody>
-            <tr ng-repeat="item in api.painel_4">
-              <td id="body-tableLeft" align=center>{{item.operacao}}</td>
-              <td id="qtd-Financeiro" align=center>{{item.qtd}}</td>
-              <td id="valor-Financeiro" align=center>{{item.valor}}</td>
-            </tr>
-          </tbody>
-          <script src="app.js"></script>
+    <div class="card">
+      <div class="title-header2">Vendas</div>
+      <div class="card-body">
+        <table>
+          <tr>
+            <td>Descrição</td>
+            <td>Qtd</td>
+            <td class="padding-column-Left">Valor</td>
+          </tr>
+          <tr ng-repeat="item in api.painel_2">
+            <td>{{item.operacao}}</td>
+            <td>{{item.qtd}}</td>
+            <td class="padding-column-Left">{{item.valor}}</td>
+          </tr>
         </table>
       </div>
-    </article>
+    </div>
 
-    <article class="cards-center">
-      <div class="card-up">
-        <p class="title-header3">
-          Vendas
-        </p>
 
-        <table id="os">
-          <thead>
-            <tr>
-              <td class="header-tableLeft" align=center> </td>
-              <td class="header-tableCenter" align=center>Qtd.</td>
-              <td class="header-tableRight" align=center>Valor(R$)</td>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr ng-repeat="item in api.painel_2">
-              <td id="body-tableLeft" align=center>{{item.operacao}}</td>
-              <td id="qtd-Financeiro" align=center>{{item.qtd}}</td>
-              <td id="valor-Financeiro" align=center>{{item.valor}}</td>
-            </tr>
-          </tfoot>
-          <script src="app.js"></script>
+    <div class="card">
+      <div class="title-header3">Ordem de Serviço</div>
+      <div class="card-body">
+        <table>
+          <tr>
+            <td>Descrição</td>
+            <td>Qtd</td>
+            <td class="padding-column-Left">Valor</td>
+          </tr>
+          <tr ng-repeat="item in api.painel_3">
+            <td>{{item.operacao}}</td>
+            <td>{{item.qtd}}</td>
+            <td class="padding-column-Left">{{item.valor}}</td>
+          </tr>
         </table>
       </div>
+    </div>
 
-      <div class="card-down">
-        <p class="title-header4">
-          Fechamento de Caixa
-        </p>
 
-        <table id="financeiro">
-          <thead>
-            <tr>
-              <td class="header-tableLeft" align=center> </td>
-              <td class="header-tableCenter" align=center>Qtd.</td>
-              <td class="header-tableRight" align=center>Valor(R$)</td>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr ng-repeat="item in api.painel_5">
-              <td id="body-tableLeft" align=center>{{item.operacao}}</td>
-              <td id="qtd-Financeiro" align=center>{{item.qtd}}</td>
-              <td id="valor-Financeiro" align=center>{{item.valor}}</td>
-            </tr>
-          </tbody>
-          <script src="app.js"></script>
+    <div class="card">
+      <div class="title-header4">Financeiro</div>
+      <div class="card-body">
+        <table>
+          <tr>
+            <td>Descrição</th>
+            <td>Qtd</th>
+            <td class="padding-column-Left">Valor</th>
+          </tr>
+          <tr ng-repeat="item in api.painel_4">
+            <td>{{item.operacao}}</td>
+            <td>{{item.qtd}}</td>
+            <td class="padding-column-Left">{{item.valor}}</td>
+          </tr>
         </table>
       </div>
-    </article>
+    </div>
 
-    <article class="cards-right">
-      <div class="card-up">
-        <p class="title-header5">
-          Ordem de Serviço
-        </p>
 
-        <table id="fechamento">
-          <thead>
-            <tr>
-              <td class="header-tableLeft" align=center> </td>
-              <td class="header-tableCenter" align=center>Qtd.</td>
-              <td class="header-tableRight" align=center>Valor(R$)</td>
-            </tr>
-          </thead>
+    <div class="card">
+      <div class="title-header5">Fechamento de Caixa</div>
 
-          <tbody>
-            <tr ng-repeat="item in api.painel_3">
-              <td id="body-tableLeft" align=center>{{item.operacao}}</td>
-              <td id="qtd-Financeiro" align=center>{{item.qtd}}</td>
-              <td id="valor-Financeiro" align=center>{{item.valor}}</td>
-            </tr>
-          </tbody>
-          <script src="app.js"></script>
+      <div class="card-body">
 
+        <table>
+          <tr>
+            <td>Descrição</th>
+            <td>Qtd</th>
+            <td class="padding-column-Left">Valor</th>
+          </tr>
+          <tr ng-repeat="item in api.painel_5">
+            <td>{{item.operacao}}</td>
+            <td>{{item.qtd}}</td>
+            <td class="padding-column-Left">{{item.valor}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="title-header6">Compras</div>
+
+      <div class="card-body">
+
+        <table>
+          <tr>
+            <td>Descrição</th>
+            <td>Qtd</th>
+            <td class="padding-column-Left">Valor</th>
+          </tr>
+          <tr ng-repeat="item in api.painel_6">
+            <td>{{item.operacao}}</td>
+            <td>{{item.qtd}}</td>
+            <td class="padding-column-Left">{{item.valor}}</td>
+          </tr>
         </table>
       </div>
 
-      <div class="card-down">
-        <p class="title-header6">
-          Compras
-        </p>
+    </div>
 
-        <table id="compras">
-          <thead>
-            <tr>
-              <td class="header-tableLeft" align=center></td>
-              <td class="header-tableCenter" align=center>Qtd.</td>
-              <td class="header-tableRight" align=center>Valor(R$)</td>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr ng-repeat="item in api.painel_6">
-              <td id="body-tableLeft" align=center>{{item.operacao}}</td>
-              <td id="qtd-Financeiro" align=center>{{item.qtd}}</td>
-              <td id="valor-Financeiro" align=center>{{item.valor}}</td>
-            </tr>
-          </tbody>
-          <script src="app.js"></script>
-        </table>
-      </div>
-    </article>
-  </section>
-<!-- -->
+    <script src="app.js"></script>
+  </div>
 </body>
 
 </html>

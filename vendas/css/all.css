@@ -1,9 +1,2 @@
-@import 'reset.css';
 @import 'cards.css';
-@import 'circle.css';
-@import 'encomendas.css';
-@import 'financeiro.css';
-@import 'vendas.css';
-@import 'fechamento_caixa.css';
-@import 'OS.css';
-@import 'compras.css';
+@import 'reset.css';

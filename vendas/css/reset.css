@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial,sans-serif;
+  font-family: Roboto;
 }
 
 html, body {
-  background-color: #E9F2FF;
   height: 100%;
   width: 100%;
+}
+
+
+.container {
+  padding: 32px 64px 32px 64px;
+  width: auto;
 }
